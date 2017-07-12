@@ -44,11 +44,11 @@ def main():
     myminacc = MinBalAccount()
     print 'My min bal acc balance is %d' % myminacc.balance
 
-    myminacc.addAmount(50)
+    myminacc.addAmount(75)
 
     print 'My min bal acc balance is %d' % myminacc.balance
 
-    myminacc.addAmount(50)
+    myminacc.addAmount(100)
 
     print 'My min bal acc balance is %d' % myminacc.balance
 
