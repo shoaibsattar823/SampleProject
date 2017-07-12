@@ -1,7 +1,7 @@
 class Bankaccount:
   def __init__(self):
     self.balance = 0
-  
+
   def addAmount(self, amt):
     self.balance += amt
     return self.balance
@@ -12,7 +12,7 @@ class MinBalAccount(Bankaccount):
   def __init__(self):
     Bankaccount.__init__(self)
     #self.minbal = 50
- 
+
   def withdraw(self, amt):
     if (self.balance-amt < self.minbal):
       print 'Cannot withdraw amount.'
@@ -32,7 +32,7 @@ def main():
   myacc = Bankaccount()
   myacc.addAmount(50)
   print "My account balance is %d" % myacc.balance
-  
+
   myacc.addAmount(50)
   print "My account balance is %d" % myacc.balance
 
@@ -40,17 +40,18 @@ def main():
   print 'My min bal acc balance is %d' % myminacc.balance
 
   myminacc.addAmount(50)
-  
+
   print 'My min bal acc balance is %d' % myminacc.balance
 
   myminacc.addAmount(50)
-  
+
   print 'My min bal acc balance is %d' % myminacc.balance
 
   myminacc.withdraw(30)
   myminacc.withdraw(30)
-  myminacc.withdraw(20)
+  
+
+  #Let's make some changes
 
 if __name__ == '__main__':
   main()
-
