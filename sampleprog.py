@@ -20,7 +20,7 @@ class MinBalAccount(Bankaccount):
 
     def withdraw(self, amt):
         if (self.balance-amt < self.minbal):
-        print 'Cannot withdraw amount.'
+            print 'Cannot withdraw amount.'
         else:
             #self.balance -= amt
             print 'balance here: ', self.balance
