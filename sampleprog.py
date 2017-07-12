@@ -49,9 +49,6 @@ def main():
 
   myminacc.withdraw(30)
   myminacc.withdraw(30)
-  
-
-  #Let's make some changes
 
 if __name__ == '__main__':
   main()
