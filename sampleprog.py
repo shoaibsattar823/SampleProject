@@ -55,6 +55,8 @@ def main():
     myminacc.withdraw(30)
     myminacc.withdraw(30)
     myminacc.withdraw(20)
+    myminacc.withdraw(50)
+    myminacc.withdraw(10)
 
 
 if __name__ == '__main__':
