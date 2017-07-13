@@ -14,23 +14,25 @@ class Bankaccount:
 
 class MinBalAccount(Bankaccount):
     minbal = 50
+
     def __init__(self):
         Bankaccount.__init__(self)
-        #self.minbal = 50
+        # self.minbal = 50
 
     def withdraw(self, amt):
         if (self.balance-amt < self.minbal):
             print 'Cannot withdraw amount.'
         else:
-            #self.balance -= amt
+            # self.balance -= amt
             print 'balance here: ', self.balance
             bal = self.balance
             rem = bal - amt
             self.balance -= amt
             print 'we\'re here'
             print 'rem = ', rem
-            print 'withdrawn ammount %f and remaining ammount is %f' % (amt, rem)
-            #return self.balance
+            print 'withdrawn ammount %f and remaining ammount is %f' % (amt,
+                                                                        rem)
+            # return self.balance
 
 
 def main():
