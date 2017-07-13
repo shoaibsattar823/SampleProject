@@ -20,7 +20,7 @@ class MinBalAccount(Bankaccount):
 
     def withdraw(self, amt):
         if (self.balance-amt < self.minbal):
-        print 'Cannot withdraw amount.'
+            print 'Cannot withdraw amount.'
         else:
             #self.balance -= amt
             print 'balance here: ', self.balance
@@ -44,17 +44,19 @@ def main():
     myminacc = MinBalAccount()
     print 'My min bal acc balance is %d' % myminacc.balance
 
-    myminacc.addAmount(50)
+    myminacc.addAmount(75)
 
     print 'My min bal acc balance is %d' % myminacc.balance
 
-    myminacc.addAmount(50)
+    myminacc.addAmount(100)
 
     print 'My min bal acc balance is %d' % myminacc.balance
 
     myminacc.withdraw(30)
     myminacc.withdraw(30)
     myminacc.withdraw(20)
+    myminacc.withdraw(50)
+    myminacc.withdraw(10)
 
 
 if __name__ == '__main__':
