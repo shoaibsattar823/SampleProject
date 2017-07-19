@@ -38,7 +38,7 @@ class MinBalAccount(Bankaccount):
 def main():
     myacc = Bankaccount()
     myacc.addAmount(50)
-    print "My account balance is %d" % myacc.balance
+    print 'My account balance is %d' % myacc.balance
 
     myacc.addAmount(50)
     print "My account balance is %d" % myacc.balance
